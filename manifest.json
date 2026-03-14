@@ -1,0 +1,16 @@
+{
+  "name": "TNT decision",
+  "short_name": "TNT decision",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#1b5e20",
+  "theme_color": "#faf8f2",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/2382/2382461.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
