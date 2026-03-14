@@ -10,7 +10,8 @@
     <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/2382/2382461.png">
     
     <title>TNT decision</title>
-    <style>
+    <link rel="manifest" href="./manifest.json">
+      <style>
         :root { 
             --snubh-dark-green: #1b5e20; --apple-bg: #faf8f2; --element-bg: #f3f0e9;
             --nchm-clr: #2e7d32; --ctnt-clr: #5856d6; --itnt-clr: #ff9500; --accent: #007aff;
@@ -169,6 +170,15 @@
         }
         link.style.display = "inline-block";
         link.href = ROADMAP_URL + "?mode=" + strategy; 
+    }
+</script>
+    <script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('./sw.js')
+                .then(reg => console.log('PWA Service Worker 등록 완료'))
+                .catch(err => console.log('PWA 등록 실패', err));
+        });
     }
 </script>
 </body>
